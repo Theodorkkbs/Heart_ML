@@ -13,12 +13,13 @@ import streamlit as st
 
 # Title and Sub title
 st.write(""""""
-         # Cardiovascular Disease Detection """
+         # Cardiovascular Disease Detection 
          # 1:Male 0:Female
          # thalassemia 3=normal 6=fixed 7=reversable defect
          # chest pain: starts from low which is 0 and goes up to 3
          # exercise_induced_angina 0:no 1:yes
          # resting blood sugar 120mg/dl 1:true 0:no
+         """"""
          )
 
 # display image
