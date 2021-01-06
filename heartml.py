@@ -23,8 +23,8 @@ st.write(""""""
          )
 
 # display image
-image = Image.open('C:/Users/GetsomeHate/PycharmProjects/Heart_ML/heart.jpg')
-st.image(image, caption='Machine Learning', use_column_width=True)
+#image = Image.open('C:/Users/GetsomeHate/PycharmProjects/Heart_ML/heart.jpg')  remove comment and put your image here
+#st.image(image, caption='Machine Learning', use_column_width=True)
 # get Data
 df = pd.read_csv('C:/Users/GetsomeHate/PycharmProjects/Heart_ML/heart.csv')
 
