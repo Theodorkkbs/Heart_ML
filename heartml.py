@@ -9,6 +9,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from PIL import Image
 import streamlit as st
+import io
+import requests
+
 
 
 # Title and Sub title
@@ -26,7 +29,9 @@ st.write(""""""
 #image = Image.open('C:/Users/GetsomeHate/PycharmProjects/Heart_ML/heart.jpg')  remove comment and put your image here
 #st.image(image, caption='Machine Learning', use_column_width=True)
 # get Data
-df = pd.read_csv('C:/Users/GetsomeHate/PycharmProjects/Heart_ML/heart.csv')
+url="https://github.com/Theodorkkbs/Heart_ML/blob/main/heart.csv"
+s=requests.get(url).content
+df = pd.read_csv(io.StringIO(s.decode('utf-8')))
 
 st.subheader('Data Information :')
 # show data in a table
