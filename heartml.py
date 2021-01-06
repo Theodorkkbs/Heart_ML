@@ -9,8 +9,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from PIL import Image
 import streamlit as st
-import io
-import requests
 
 
 
@@ -30,7 +28,6 @@ st.write(""""""
 #st.image(image, caption='Machine Learning', use_column_width=True)
 # get Data
 url="https://github.com/Theodorkkbs/Heart_ML/blob/main/heart.csv"
-s=requests.get(url).content
 df = pd.read_csv(url)
 
 st.subheader('Data Information :')
