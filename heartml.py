@@ -31,7 +31,7 @@ st.write(""""""
 # get Data
 url="https://github.com/Theodorkkbs/Heart_ML/blob/main/heart.csv"
 s=requests.get(url).content
-df = pd.read_csv(io.StringIO(s.decode('utf-8')))
+df = pd.read_csv(url)
 
 st.subheader('Data Information :')
 # show data in a table
