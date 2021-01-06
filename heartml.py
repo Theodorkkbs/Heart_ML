@@ -28,7 +28,7 @@ st.write(""""""
 #st.image(image, caption='Machine Learning', use_column_width=True)
 # get Data
 url="https://github.com/Theodorkkbs/Heart_ML/blob/main/heart.csv"
-df = pd.read_csv(url,error_bad_lines=False) #df = pd.read_csv('C:/Users/GetsomeHate/PycharmProjects/Heart_ML/heart.csv') my route
+df = pd.read_csv(url) #df = pd.read_csv('C:/Users/GetsomeHate/PycharmProjects/Heart_ML/heart.csv') my route, use this to run in on your local machine
 
 
 st.subheader('Data Information :')
